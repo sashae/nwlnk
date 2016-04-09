@@ -23,8 +23,8 @@ var bot = new irc.Client(config.server, config.nick, {
 
 // write stdout/errors to logfile
 bot.addListener('stdout', function(message) {
-    logger.log('debug: ', message);
+    console.log('debug: ', message);
 });
 bot.addListener('error', function(message) {
-    logger.log('error: ', message);
+    console.log('error: ', message);
 });
