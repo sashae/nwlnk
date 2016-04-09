@@ -2,7 +2,7 @@
 var config = require('./config.js');
 var fs = require('fs');
 var irc = require('irc');
-var console = require('console').Console;
+var Console = require('console').Console;
 
 // set up logging to file
 const output = fs.createWriteStream('./debug.log');
