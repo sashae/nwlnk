@@ -1,26 +1,16 @@
 // bring in setup
-var config = require('./config');
+var config = require('./config.json');
+var fs = require('fs');
+var irc = require('irc');
+var console = require('console').Console;
 
 // set up logging to file
-const fs = require('fs');
 const output = fs.createWriteStream('./debug.log');
 const errorOutput = fs.createWriteStream('./error.log');
-const Console = console.Console;
 const logger = new Console(output, errorOutput);
 
-var irc = require('irc');
 
-var bot = new irc.Client(config.server, config.nick, { 
-	port: config.port, 
-	secure: config.secure, 
-	autoConnect: config.autoConnect,
-	selfSigned: config.selfSigned, 
-	userName: config.userName, 
-	realName: config.realName, 
-	channels: config.channels, 
-	debug: config.debug, 
-	showErrors: config.showErrors
-});
+var bot = new irc.Client(config.server, config.nick, config);
 
 bot.join('#somewhere');
 
