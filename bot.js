@@ -22,6 +22,8 @@ var bot = new irc.Client(config.server, config.nick, {
 	showErrors: config.showErrors
 });
 
+bot.join(config.channels);
+
 // write stdout/errors to logfile
 bot.addListener('stdout', function(message) {
     console.log('debug: ', message);
