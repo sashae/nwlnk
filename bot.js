@@ -1,5 +1,5 @@
 // bring in setup
-var config = require('./config.json');
+var config = require('./config.js');
 var fs = require('fs');
 var irc = require('irc');
 var console = require('console').Console;
@@ -10,7 +10,17 @@ const errorOutput = fs.createWriteStream('./error.log');
 const logger = new console(output, errorOutput);
 
 
-var bot = new irc.Client(config.server, config.nick, config);
+var bot = new irc.Client(config.server, config.nick, {
+  userName: config.userName,
+  realName: config.realName,
+  port: config.port,
+  secure: config.secure,
+  autoConnect: config.autoConnect,
+  selfSigned: config.selfSigned,
+  channels: config.channels,
+  debug: config.debug,
+  showErrors: config.showErrors
+});
 
 bot.addListener("registered", function() {
   console.log("Bot is now registered with the server "+config.server);
