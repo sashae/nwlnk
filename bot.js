@@ -14,7 +14,7 @@ var bot = new irc.Client(config.server, config.nick, config);
 
 bot.connect(5, function() {
 bot.join('#somewhere');
-};
+});
 
 // write stdout/errors to logfile
 bot.addListener('stdout', function(message) {
