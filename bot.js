@@ -1,7 +1,10 @@
 // bring in setup
-var config = require('./config.js');
-var fs = require('fs');
-var irc = require('irc');
+var config = require("./config.js");
+var fs = require("fs");
+var irc = require("irc");
+var twitter = require("./modules/twitter");
+var youtube = require("./modules/youtube");
+
 var Console = require('console').Console;
 
 // set up logging to file
