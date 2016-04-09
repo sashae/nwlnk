@@ -5,6 +5,7 @@ var config = require('./config');
 const fs = require('fs');
 const output = fs.createWriteStream('./debug.log');
 const errorOutput = fs.createWriteStream('./error.log');
+const Console = console.Console;
 const logger = new Console(output, errorOutput);
 
 var irc = require('irc');
