@@ -8,15 +8,15 @@ const logger = new Console(output, errorOutput);
 
 var irc = require('irc');
 
-var bot = new irc.Client(config.server, config.nick, 
-	{ config.port, 
-	config.secure, 
-	config.selfSigned, 
-	config.userName, 
-	config.realName, 
+var bot = new irc.Client(config.server, config.nick, { 
+	port: config.port, 
+	secure: config.secure, 
+	selfSigned: config.selfSigned, 
+	userName: config.userName, 
+	realName: config.realName, 
 	channels: config.channels, 
-	config.debug, 
-	config.showErrors
+	debug: config.debug, 
+	showErrors: config.showErrors
 });
 
 // write stdout/errors to logfile
