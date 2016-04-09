@@ -12,6 +12,10 @@ const logger = new console(output, errorOutput);
 
 var bot = new irc.Client(config.server, config.nick, config);
 
+bot.addListener("registered", function() {
+  console.log("Bot is now registered with the server "+config.server);
+});
+
 bot.addListener('message', function (from, to, message) {
     console.log(from + ' => ' + to + ': ' + message);
 });
