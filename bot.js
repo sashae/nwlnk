@@ -10,16 +10,16 @@ const errorOutput = fs.createWriteStream('./error.log');
 const logger = new console(output, errorOutput);
 
 
-var bot = new irc.Client(config.server, config.nick, {
-  userName: config.userName,
-  realName: config.realName,
-  port: config.port,
-  secure: config.secure,
-  autoConnect: config.autoConnect,
-  selfSigned: config.selfSigned,
-  channels: config.channels,
-  debug: config.debug,
-  showErrors: config.showErrors
+var bot = new irc.Client("irc.subtle.org", "nwlnk", {
+  userName: "nwlnk",
+  realName: "nwlnk",
+  port: 6697,
+  secure: true,
+  autoConnect: true,
+  selfSigned: true,
+  channels: ["#somewhere"],
+  debug: true,
+  showErrors: true
 });
 
 bot.addListener("registered", function() {
