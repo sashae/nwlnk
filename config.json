@@ -1,6 +1,6 @@
 {
   "admins": ["fet!sage@*.st"],
-  "server": "irc.subtle.org",
+  "server": "spruce.subtle.org",
   "userName": "nwlnk",
   "realName": "the shortest of links",
   "port": 6697,
