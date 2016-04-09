@@ -20,6 +20,12 @@ bot.addListener('message', function (from, to, message) {
     console.log(from + ' => ' + to + ': ' + message);
 });
 
+// Error listener
+bot.addListener("error", function(message) {
+    console.error('ERROR: %s: %s', message.command, message.args.join(' '));
+});
+
+
 bot.join('#somewhere');
 
 
