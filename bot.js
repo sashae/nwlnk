@@ -13,6 +13,7 @@ var irc = require('irc');
 var bot = new irc.Client(config.server, config.nick, { 
 	port: config.port, 
 	secure: config.secure, 
+	autoConnect: config.autoConnect,
 	selfSigned: config.selfSigned, 
 	userName: config.userName, 
 	realName: config.realName, 
