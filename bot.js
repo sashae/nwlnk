@@ -12,9 +12,12 @@ const logger = new console(output, errorOutput);
 
 var bot = new irc.Client(config.server, config.nick, config);
 
-//bot.connect(5, function() {
+bot.addListener('message', function (from, to, message) {
+    console.log(from + ' => ' + to + ': ' + message);
+});
+
 bot.join('#somewhere');
-//});
+
 
 // write stdout/errors to logfile
 bot.addListener('stdout', function(message) {
