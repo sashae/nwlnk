@@ -7,7 +7,7 @@
   "debug": true,
   "showErrors": true,
   "autoRejoin": true,
-  "autoConnect": false,
+  "autoConnect": true,
   "channels": ["#somewhere"],
   "secure": true,
   "selfSigned": true,
