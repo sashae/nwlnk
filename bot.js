@@ -25,9 +25,7 @@ bot.addListener("error", function(message) {
     console.error('ERROR: %s: %s', message.command, message.args.join(' '));
 });
 
-
-bot.join('#somewhere');
-
+//bot.join('#somewhere');
 
 // write stdout/errors to logfile
 bot.addListener('stdout', function(message) {
