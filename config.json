@@ -1,0 +1,21 @@
+{
+  "admins": ["fet!sage@*.st"],
+  "server": "irc.subtle.org",
+  "userName": "nwlnk",
+  "realName": "the shortest of links",
+  "port": 6697,
+  "debug": true,
+  "showErrors": true,
+  "autoRejoin": true,
+  "autoConnect": true,
+  "channels": ["#somewhere"],
+  "secure": true,
+  "selfSigned": true,
+  "certExpired": false,
+  "floodProtection": false,
+  "floodProtectionDelay": 1000,
+  "sasl": false,
+  "stripColors": false,
+  "channelPrefixes": "&#",
+  "messageSplit": 512
+}
