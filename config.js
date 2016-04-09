@@ -11,7 +11,7 @@ var certExpired = 'false';
 var nick = 'nwlnk';
 var userName = 'nwlnk';
 var realName = 'the shortest of links';
-var channels = ['#somewhere, #bottest'];
+var channels = ['#somewhere'];
 
 // probably want to turn this off once running for real
 var debug = 'true';
