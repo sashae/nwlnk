@@ -2,6 +2,7 @@
 var server = 'irc.subtle.org';
 var port = '6697';
 var secure = 'true';
+var autoConnect = 'true';
 //allows for self-signed or non-CA approved certs, like letsencrypt.
 var selfSigned = 'true';
 var certExpired = 'false';
