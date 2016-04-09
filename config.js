@@ -8,6 +8,7 @@ var certExpired = 'false';
 
 // where are we going
 var nick = 'nwlnk';
+var userName = 'nwlnk';
 var realName = 'the shortest of links';
 var channels = ['#somewhere, #bottest'];
 
