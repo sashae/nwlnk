@@ -7,7 +7,7 @@ var Console = require('console').Console;
 // set up logging to file
 const output = fs.createWriteStream('./debug.log');
 const errorOutput = fs.createWriteStream('./error.log');
-const logger = new console(output, errorOutput);
+const logger = new Console(output, errorOutput);
 
 
 var bot = new irc.Client("irc.subtle.org", "nwlnk", {
