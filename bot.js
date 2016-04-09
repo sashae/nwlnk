@@ -2,6 +2,7 @@
 var config = require('./config');
 
 // set up logging to file
+const fs = require('fs');
 const output = fs.createWriteStream('./debug.log');
 const errorOutput = fs.createWriteStream('./error.log');
 const logger = new Console(output, errorOutput);
