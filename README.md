@@ -1,2 +1,2 @@
 # nwlnk
-node.js irc bot 
+experimentalism
